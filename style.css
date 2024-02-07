@@ -1,0 +1,51 @@
+html{
+    background-color: #6592A0;
+    color: whitesmoke; 
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+}
+
+.main{
+    background-color: #6592A0;
+    color: whitesmoke; 
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+}
+
+#title{
+    margin: 30px;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+p {
+    font-size: 25px;
+}
+
+input{
+    width: 60%;
+    height: 35px;
+}
+
+button {
+    font-family: 'Cormorant Garamond', serif;
+    background-color:slategray;
+    color: whitesmoke;
+    height: 36px;
+}
+
+#result{
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#map {
+    width: 500px;
+    height: 500px; 
+  }
