@@ -27,10 +27,6 @@ input{
     height: 35px;
 }
 
-label {
-    color: #6592A0;
-}
-
 button {
     font-family: 'Cormorant Garamond', serif;
     background-color:slategray;

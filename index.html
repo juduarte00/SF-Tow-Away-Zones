@@ -20,7 +20,7 @@
             <h1 id="title"> San Francisco Enforced Temporary Tow Zones</h1>
             <p> Enter a San Francisco street address below to check if it is in a tow zone.</p>
             <div class="searchbar">
-                <label>Location:</label> <br> 
+                <label>For correct usage abbreviate different road types such as Street and Avenue to St and Ave.</label> <br> 
                 <input type="text" id="location" placeholder="Enter an address" name="location">
                 <button onclick="codeAddress()">Submit</button>
             </div>
@@ -30,18 +30,9 @@
             </div>
         </div>
         
-        <script src="script.js" async defer></script>
         <script> 
-            var searchInput = document.getElementById("location");
-            document.addEventListener('DOMContentLoaded', function () {
-            var autocomplete = new google.maps.places.Autocomplete(searchInput, { 
-                types: ['geocode'],
-                componentRestrictions: { country: 'us' }
-            }); 
-            autocomplete.addListener('place_changed', function () { 
-                var near_place = autocomplete.getPlace(); 
-            });
-            });
+            
         </script>
+        <script src="script.js" async defer></script>
     </body>
 </html>

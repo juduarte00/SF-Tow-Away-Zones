@@ -16,7 +16,7 @@ fetch(apiUrl)
   .then(data => {
     console.log(data);
     adrs = data.map(function(data) {
-        return data['address'];
+        return data['address'].concat(", SAN FRANCISCO, CA, USA");
       });
       console.log(adrs);
   })
@@ -34,7 +34,11 @@ function initialize() {
       center: latlng
     }
     map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+    var input = document.getElementById('location');
+    new google.maps.places.Autocomplete(input);
 }
+google.maps.event.addDomListener(window, 'load', initialize);
 
 function codeAddress() {
     // check if address entered is in the string array
@@ -51,6 +55,8 @@ function codeAddress() {
     geocoder.geocode( { 'address': address}, function(results, status) {
         if (status == 'OK') {
           map.setCenter(results[0].geometry.location);
+          console.log(results[0].geometry.location);
+          console.log(results[0].geometry.location);
           var marker = new google.maps.Marker({
               map: map,
               position: results[0].geometry.location
