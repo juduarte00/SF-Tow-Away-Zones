@@ -1,21 +1,27 @@
 html{
-    background-color: #6592A0;
+    background-color: 	#9bbff4;
     color: whitesmoke; 
     font-family: 'Cormorant Garamond', serif;
     text-align: center;
 }
 
 .main{
-    background-color: #6592A0;
+    background-color: 	#9bbff4;
     color: whitesmoke; 
     font-family: 'Cormorant Garamond', serif;
     text-align: center;
+    text-shadow: 1px 1px 1px slategray;
 }
 
 #title{
     margin: 30px;
     font-size: 40px;
     font-weight: 800;
+}
+
+label{
+    color: black;
+    font-size: 18px;
 }
 
 p {
@@ -46,6 +52,6 @@ button {
 }
 
 #map {
-    width: 500px;
+    width: 800px;
     height: 500px; 
   }

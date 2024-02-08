@@ -46,9 +46,9 @@ function codeAddress() {
     console.log(address); 
     var match = (adrs.indexOf(address.toUpperCase()) > -1);
     if (match){
-        document.getElementById('result').innerHTML = "Tow away zone &#10060;";
+        document.getElementById('result').innerHTML = "&#10060; Tow away zone &#10060;";
     } else {
-        document.getElementById('result').innerHTML = "You're in the clear! &#9989;";
+        document.getElementById('result').innerHTML = "&#9989; You're in the clear! &#9989;";
     }
 
     // creating and adding image based on result 
